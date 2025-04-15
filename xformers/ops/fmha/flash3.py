@@ -564,7 +564,7 @@ class FwOp(AttentionFwOpBase):
 
     OPERATOR = get_operator("xformers_flash3", "flash_fwd")
     SUPPORTED_DEVICES: Set[str] = {"cuda"}
-    CUDA_MINIMUM_COMPUTE_CAPABILITY = (9, 0)
+    CUDA_MINIMUM_COMPUTE_CAPABILITY = (8.9, 0)
     SUPPORTED_DTYPES: Set[torch.dtype] = supported_dtypes()
     SUPPORTED_MAX_K = 256
     SUPPORTED_MIN_K = 64
